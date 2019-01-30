@@ -34,11 +34,11 @@ const convertToStringPressedKeys = event => {
 
   const keyPressed = event.key.toUpperCase();
 
-  const kepPressedIsSpecial = specialKeys.find(
+  const keyPressedIsSpecial = specialKeys.find(
     key => key.original === keyPressed
   );
 
-  !kepPressedIsSpecial && pressedKey.push(keyPressed);
+  !keyPressedIsSpecial && pressedKey.push(keyPressed);
 
   return pressedKey.join("+");
 };
