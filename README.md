@@ -8,6 +8,6 @@ const actions = {
 }
 
 <ShortcutKeySensor actions={actions}>
-  {this.props.chilrens}
+  {this.props.childrens}
 </ShortcutKeySensor>
 ```
