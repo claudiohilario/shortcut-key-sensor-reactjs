@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { ShortcutProps } from './types';
+import { specialKeys } from './constants'
 
 /**
  * This function convert pressed keys in formatted string.
@@ -10,33 +11,12 @@ import { ShortcutProps } from './types';
  * E.g.: "CTRL+A"
  */
 function convertToStringPressedKeys(event: any) {
-  const specialKeys = [
-    {
-      key: "ctrlKey",
-      original: "CONTROL",
-      value: "CTRL"
-    },
-    {
-      key: "altKey",
-      original: "ALT",
-      value: "ALT"
-    },
-    {
-      key: "shiftKey",
-      original: "SHIFT",
-      value: "SHIFT"
-    }
-  ];
-
   const pressedKey = specialKeys
     .filter(specialKey => event[specialKey.key])
     .map(specialKey => specialKey.value);
 
   const keyPressed = event.key.toUpperCase();
-
-  const keyPressedIsSpecial = specialKeys.find(
-    key => key.original === keyPressed
-  );
+  const keyPressedIsSpecial = specialKeys.find(key => key.original === keyPressed);
 
   !keyPressedIsSpecial && pressedKey.push(keyPressed);
 

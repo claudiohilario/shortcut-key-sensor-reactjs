@@ -1,4 +1,4 @@
-export const SPECIAL_KEYS = [
+export const specialKeys = [
   {
     key: "ctrlKey",
     original: "CONTROL",
