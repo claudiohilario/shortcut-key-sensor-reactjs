@@ -1,13 +1,25 @@
-# Usage Example
+# @ontech/shortcut-key-sensor
 
-```js
-const actions = {
-  'CTRL+A': (event) => console.log('Clicked in CTRL+A'),
-  'CTRL+B': (event) => console.log('Clicked in CTRL+B'),
-  'CTRL+C': (event) => console.log('Clicked in CTRL+C'),
+[![NPM](https://img.shields.io/npm/v/@ontech/shortcut-key-sensor.svg)](https://www.npmjs.com/package/@ontech/shortcut-key-sensor) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+## Install
+
+```bash
+npm install --save @ontech/shortcut-key-sensor
+```
+
+## Usage
+
+```tsx
+import React, { Component } from 'react';
+
+import ShortcutKeySensor from '@ontech/shortcut-key-sensor';
+
+const Example = () => {
+  return (
+    <ShortcutKeySensor actions={actions}>
+      <h1>Example ShortcutKeySensor</h1>
+    </ShortcutKeySensor>
+  );
 }
-
-<ShortcutKeySensor actions={actions}>
-  {this.props.childrens}
-</ShortcutKeySensor>
 ```

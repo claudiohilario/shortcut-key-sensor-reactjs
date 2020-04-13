@@ -1,5 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
+import { useEffect } from 'react'
+import { ShortcutProps } from './types';
 
 /**
  * This function convert pressed keys in formatted string.
@@ -9,7 +9,7 @@ import PropTypes from "prop-types";
  * @returns {string} Returns string formated.
  * E.g.: "CTRL+A"
  */
-const convertToStringPressedKeys = event => {
+function convertToStringPressedKeys(event: any) {
   const specialKeys = [
     {
       key: "ctrlKey",
@@ -43,56 +43,20 @@ const convertToStringPressedKeys = event => {
   return pressedKey.join("+");
 };
 
-/**
- * @class
- * This class represents the component ShortcutKeySensor
- *
- * @example
- * const actions = {
- *  'CTRL+A': (event) => console.log('Clicked in Control + A');
- * }
- * <ShortcutKeySensor actions={actions}>
- * ...
- * </ShortcutKeySensor>
- */
-class ShortcutKeySensor extends React.Component {
-  constructor() {
-    super();
-    this.handleOnKeyDown = this.handleOnKeyDown.bind(this);
-  }
-
-  /**
-   * This method is executed after clicking a key.
-   * Detects if exists action associate a key pressed and execute action.
-   *
-   * @param {Object} event - The event
-   */
-  handleOnKeyDown(event) {
+export default function ShortcutKeySensor({ actions, children }: ShortcutProps) {
+  const handleKeyDown = (event: any) => {
     const combinationKeys = convertToStringPressedKeys(event);
-    const { actions } = this.props;
-
     const matchWithPressedKey = Object.prototype.hasOwnProperty.call(
       actions,
       combinationKeys
     );
     matchWithPressedKey && actions[combinationKeys](event);
   }
-
-  render() {
-    return (
-      <div tabIndex="0" onKeyDown={this.handleOnKeyDown}>
-        {this.props.children}
-      </div>
-    );
-  }
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    }
+  }, []);
+  return children;
 }
-
-ShortcutKeySensor.defaultProps = {
-  actions: {}
-};
-
-ShortcutKeySensor.propTypes = {
-  actions: PropTypes.object
-};
-
-export default ShortcutKeySensor;
