@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/@ontech/shortcut-key-sensor/static/css/main.42cc8b22.chunk.css",
+    "main.js": "/@ontech/shortcut-key-sensor/static/js/main.0d17c37a.chunk.js",
+    "main.js.map": "/@ontech/shortcut-key-sensor/static/js/main.0d17c37a.chunk.js.map",
+    "runtime-main.js": "/@ontech/shortcut-key-sensor/static/js/runtime-main.302d1cea.js",
+    "runtime-main.js.map": "/@ontech/shortcut-key-sensor/static/js/runtime-main.302d1cea.js.map",
+    "static/js/2.1bb9b7a4.chunk.js": "/@ontech/shortcut-key-sensor/static/js/2.1bb9b7a4.chunk.js",
+    "static/js/2.1bb9b7a4.chunk.js.map": "/@ontech/shortcut-key-sensor/static/js/2.1bb9b7a4.chunk.js.map",
+    "index.html": "/@ontech/shortcut-key-sensor/index.html",
+    "precache-manifest.254ea7a7183cc709165b46da09b672ba.js": "/@ontech/shortcut-key-sensor/precache-manifest.254ea7a7183cc709165b46da09b672ba.js",
+    "service-worker.js": "/@ontech/shortcut-key-sensor/service-worker.js",
+    "static/css/main.42cc8b22.chunk.css.map": "/@ontech/shortcut-key-sensor/static/css/main.42cc8b22.chunk.css.map",
+    "static/js/2.1bb9b7a4.chunk.js.LICENSE.txt": "/@ontech/shortcut-key-sensor/static/js/2.1bb9b7a4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.302d1cea.js",
+    "static/js/2.1bb9b7a4.chunk.js",
+    "static/css/main.42cc8b22.chunk.css",
+    "static/js/main.0d17c37a.chunk.js"
+  ]
+}
