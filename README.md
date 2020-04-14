@@ -16,6 +16,12 @@ import React, { Component } from 'react';
 import ShortcutKeySensor from '@ontech/shortcut-key-sensor';
 
 const Example = () => {
+  const actions = {
+    'CTRL+A': () => alert('Clicked in CTRL+A'),
+    'CTRL+SHIFT+A': () => alert('Clicked in CTRL+SHIFT+A'),
+    'SHIFT+A': () => alert('Clicked in SHIFT+A'),
+    'A': () => alert('Clicked in A'),
+  }
   return (
     <ShortcutKeySensor actions={actions}>
       <h1>Example ShortcutKeySensor</h1>
