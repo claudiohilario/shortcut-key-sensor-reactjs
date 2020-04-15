@@ -1,10 +1,7 @@
 {
   "name": "@ontech/shortcut-key-sensor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Shortcut key sensor to reactjs",
-  "author": "claudiohilario",
-  "license": "MIT",
-  "repository": "claudiohilario/@ontech/shortcut-key-sensor",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
@@ -50,5 +47,20 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claudiohilario/shortcut-key-sensor-reactjs.git"
+  },
+  "keywords": [
+    "Shortcut",
+    "reactjs",
+    "key press"
+  ],
+  "author": "Cláudio Hilário",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/claudiohilario/shortcut-key-sensor-reactjs/issues"
+  },
+  "homepage": "https://github.com/claudiohilario/shortcut-key-sensor-reactjs#readme"
 }
