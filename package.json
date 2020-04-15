@@ -1,6 +1,6 @@
 {
   "name": "shortcut-key-sensor",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Shortcut key sensor to reactjs",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",

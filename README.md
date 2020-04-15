@@ -1,4 +1,4 @@
-# @ontech/shortcut-key-sensor
+# shortcut-key-sensor
 
 [![NPM](https://img.shields.io/npm/v/shortcut-key-sensor.svg)](https://www.npmjs.com/package/shortcut-key-sensor) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
