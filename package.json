@@ -1,5 +1,5 @@
 {
-  "name": "@ontech/shortcut-key-sensor",
+  "name": "shortcut-key-sensor",
   "version": "1.0.1",
   "description": "Shortcut key sensor to reactjs",
   "main": "dist/index.js",
@@ -19,9 +19,6 @@
     "test:watch": "react-scripts test --env=jsdom",
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build"
-  },
-  "peerDependencies": {
-    "react": "^16.0.0"
   },
   "devDependencies": {
     "@types/react": "^16.9.27",
@@ -62,5 +59,8 @@
   "bugs": {
     "url": "https://github.com/claudiohilario/shortcut-key-sensor-reactjs/issues"
   },
-  "homepage": "https://github.com/claudiohilario/shortcut-key-sensor-reactjs#readme"
+  "homepage": "https://github.com/claudiohilario/shortcut-key-sensor-reactjs#readme",
+  "dependencies": {
+    "react": "^16.0.0"
+  }
 }

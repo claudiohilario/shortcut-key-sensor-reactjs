@@ -1,11 +1,11 @@
 # @ontech/shortcut-key-sensor
 
-[![NPM](https://img.shields.io/npm/v/@ontech/shortcut-key-sensor.svg)](https://www.npmjs.com/package/@ontech/shortcut-key-sensor) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/shortcut-key-sensor.svg)](https://www.npmjs.com/package/shortcut-key-sensor) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save @ontech/shortcut-key-sensor
+npm install --save shortcut-key-sensor
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm install --save @ontech/shortcut-key-sensor
 ```tsx
 import React, { Component } from 'react';
 
-import ShortcutKeySensor from '@ontech/shortcut-key-sensor';
+import ShortcutKeySensor from 'shortcut-key-sensor';
 
 const Example = () => {
   const actions = {
