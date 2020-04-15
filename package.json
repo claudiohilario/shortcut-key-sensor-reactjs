@@ -1,6 +1,6 @@
 {
   "name": "shortcut-key-sensor",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Shortcut key sensor to reactjs",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
@@ -60,7 +60,7 @@
     "url": "https://github.com/claudiohilario/shortcut-key-sensor-reactjs/issues"
   },
   "homepage": "https://github.com/claudiohilario/shortcut-key-sensor-reactjs#readme",
-  "dependencies": {
-    "react": "^16.0.0"
+  "peerDependencies": {
+    "react": "file:../node_modules/react"
   }
 }
