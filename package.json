@@ -1,7 +1,7 @@
 {
   "name": "@ontech/shortcut-key-sensor",
   "version": "1.0.0",
-  "description": "Made with create-react-library",
+  "description": "Shortcut key sensor to reactjs",
   "author": "claudiohilario",
   "license": "MIT",
   "repository": "claudiohilario/@ontech/shortcut-key-sensor",
