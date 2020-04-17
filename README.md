@@ -10,7 +10,7 @@ npm install --save shortcut-key-sensor
 
 ## Usage
 
-```tsx
+```js
 import React, { Component } from 'react';
 
 import ShortcutKeySensor from 'shortcut-key-sensor';
@@ -27,5 +27,22 @@ const Example = () => {
       <h1>Example ShortcutKeySensor</h1>
     </ShortcutKeySensor>
   );
+}
+```
+
+## Usage Hook
+
+```js
+import React, { Component } from 'react';
+
+import { useShortcutKeySensor } from 'shortcut-key-sensor';
+
+const ExampleHook = () => {
+  useShortcutKeySensor('CTRL+A', (event) => alert('Clicked in CTRL+A'));
+  useShortcutKeySensor('CTRL+SHIFT+A', (event) => alert('Clicked in CTRL+SHIFT+A'));
+  useShortcutKeySensor('SHIFT+A', (event) => alert('Clicked in SHIFT+A'));
+  useShortcutKeySensor('A', (event) => alert('Clicked in A'));
+
+  return <h1>Example useShortcutKeySensor</h1>;
 }
 ```
