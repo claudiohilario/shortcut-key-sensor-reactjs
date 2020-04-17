@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useCallback } from 'react'
 import { ShortcutProps } from './types';
 import { specialKeys } from './constants'
 
@@ -39,4 +39,15 @@ export default function ShortcutKeySensor({ actions, children }: ShortcutProps) 
     }
   }, []);
   return children;
+}
+
+export const useShortcutKeySensor = (combinationKeys: string, callback: Function) => {
+  const memorizedCallback = useCallback((event) => {
+    const combinationPressedKeys = convertToStringPressedKeys(event);
+    combinationPressedKeys === combinationKeys && callback(event);
+  }, []);
+  useEffect(() => {
+    window.addEventListener('keydown', memorizedCallback);
+    return () => window.removeEventListener('keydown', memorizedCallback);
+  }, [memorizedCallback])
 }
