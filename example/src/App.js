@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ShortcutKeySensor from '@ontech/shortcut-key-sensor'
+import ShortcutKeySensor from 'shortcut-key-sensor';
 
 const actions = {
   'CTRL+A': () => alert('Clicked in CTRL+A'),
